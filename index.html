@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lateral Hub</title>
+    <!-- Bootstrap CSS -->
+	  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- owl CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <!-- frontawsam -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <style>
+    #home{
+      background-image: url('image/bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .owl-carousel .item img{
+      height: 100px;
+    }
+
+    #job_aleart{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 2%;
+      background-color: rgb(147, 196, 216);
+    }
+
+    #about_us_in{
+      margin: 20px;
+    }
+    #about_us_in .col-md-3{
+     margin-top: 2%;   
+     }
+    #about_us_in img{
+      width: 100%;
+      height: 100px;
+    }
+
+    #newsletter{
+      background-color: rgb(221, 240, 248);
+      padding: 5%;
+      margin: 1%;
+    }
+
+    .interview{
+      padding: 1%;
+      background-color: rgb(221, 240, 248);
+    }
+
+    #steps{
+      padding: 1%;     
+    }
+    #steps .col-md-4{
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    #steps .col-md-4:hover{
+      border-radius: 5px;
+      border: 1px solid rgb(4, 181, 204);
+    }
+
+    #library{
+      padding: 2%;
+    }
+    #mission{
+      padding: 2%;
+      background-color: rgb(20, 20, 20);
+    }
+
+    #resource .row .card{
+      border: none;
+      margin: 10px;
+      transition: 5ms;
+      box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
+      -webkit-box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
+      -moz-box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
+    }
+    #resource .row .card:hover{
+      transition: 5ms;
+      box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
+      -webkit-box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
+      -moz-box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
+    }
+    #resource .card .card-title{
+      text-decoration: none;
+      color: black;
+
+    }
+
+    #resource .card .card-title:hover{
+      color: rgb(7, 93, 221);
+
+    }
+
+    #resource .card .read-more{
+      text-decoration: none;
+      color: black;
+    }
+    #resource .card .read-more:hover{
+      color: rgb(7, 93, 221);
+    }
+    #resource .card small{
+     margin: 0;
+     padding: 0;
+     font-size: 10px;
+    }
+
+    .footer{
+      padding: 10px;
+      margin-top: 10px;
+    }
+    .footer .col-md-3 img{
+      width: 50%;
+    }
+
+    #scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      font-size: 32px;
+      background: #0051ff;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    #scroll-top span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -8px;
+      margin-top: -12px;
+      height: 0;
+      width: 0;
+      border: 8px solid transparent;
+      border-bottom-color: #ffffff;
+    }
+    #scroll-top:hover {
+      transition: 0.3s;
+      box-shadow: 0 0 20px 4px #fff;
+    }
+  </style>
+  <body>
+
+    <div class="container-xxl"><!-- Content start -->
+         
+            <nav class="navbar navbar-expand-lg navbar-light  ">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="image/LH-Logo.png" alt="" srcset="" width="150"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              
+                  <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto ">                  
+                      <li class="nav-item dropdown">
+                        <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Browse Jobs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">Practice Group</a></li>
+                          <li><a class="dropdown-item" href="#">Browse All</a></li>
+                          <li><a class="dropdown-item" href="#">Contact us</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-success text-light mx-2" href="#">For Candidate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-light mx-2" href="#">For Law Firms</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto d-none d-lg-inline-flex">
+                      <li class="nav-item mx-2">
+                        <a class="btn btn-outline-primary" href="#">LinkedIn Login (Optional)</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav><!-- navbar end -->
+
+
+             <!-- home section start  -->
+              <div class="row d-flex justify-content-center p-3 mt-3" id="home">
+                <h1 class="text-light" style="margin-top:50px;">The online job board for lateral candidates and top-tier law firms</h1>
+                <h4 class="text-light" style="margin-top:50px;">Top large, midsize, and boutique firms post their jobs on Lateral Hub so you can easily browse and apply</h4>
+                <h4 class="text-light" style="margin-top:50px;">Free to use. No account required.</h4>
+
+                    <div class="row bg-light rounded" style="padding: 20px;">
+                        <div class="col-xs-12 col-md-3 has-border">
+                          <div class="form-floating my-2">
+                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                            <label for="floatingInputGrid">Search</label>
+                          </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3 has-border">
+                            <div class="form-floating my-2">
+                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                  <option selected>Choose your location</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelectGrid">Location</label>
+                            </div>
+                         </div>
+
+                         <div class="col-xs-12 col-md-3 has-border">
+                            <div class="form-floating my-2">
+                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+                                  <option selected>Choose your Practice Group</option>
+                                  <option value="1">One</option>
+                                  <option value="2">Two</option>
+                                  <option value="3">Three</option>
+                                </select>
+                                <label for="floatingSelectGrid">Practice Group</label>
+                            </div>
+                         </div>
+
+                         <div class="col-xs-12 col-md-3 has-border">
+                          <!-- <div class="form-floating">
+                            <button class="btn-submit btn btn-theme btn-inverse" type="submit"></button>
+                          </div> -->
+                          <a class="btn btn-outline-primary my-3 px-3" href="#" style="width: 100%;">Find Jobs</a>
+                       </div>
+                        
+                    </div>
+              </div>
+             <!-- home section end  -->
+
+
+             <!-- Firms start -->
+             <div class="row" style="padding:30px;">
+                  <h3 class="text-center mt-3 text-primary">Our Member Law Firms</h3>
+                  <div class="owl-carousel owl-theme" style="margin-top: 20px;margin-buttom: 20px;">
+                    <div class="item">
+                      <img src="image/1.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="image/2.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="image/3.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="image/4.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                      <img src="image/5.png" alt="" srcset="">
+                    </div>
+                </div>
+             </div>
+             <!-- Firms end -->
+
+             <!-- aleart job start -->
+             <div class="row d-flex justify-content-center" id="job_aleart">
+              <div class="col-md-4">
+                <img src="image/massage.png" alt="" srcset="">
+              </div>
+
+              <div class="col-md-6">
+                <h3>Stay updated on new job postings!</h3>
+                <h4><a href="#">Click here </a>to sign up for SMS alerts for new openings
+                  in your location and practice area</h4>
+              </div>
+             </div>
+             <!-- aleart job end-->
+
+               <!-- aleart job start -->
+               <div class="row d-flex justify-content-center" id="about_us_in">
+                  <div class="col-md-3">
+                    <h4 class="text-center mt-4">Read about us in:</h4>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="image/1.png" alt="" srcset="">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="image/2.png" alt="" srcset="">
+                  </div>
+                  <div class="col-md-3">
+                    <img src="image/3.png" alt="" srcset="">
+                  </div>
+               </div>
+               <!-- aleart job end-->
+
+               <!-- Newsletter start -->
+                 <div class="row rounded" id="newsletter">
+                    <h2 class="fw-bold">Subscribe to the Lateral Hub Newsletter!</h2>
+                    <h5 class="fw-bold mt-4">For expert legal career advice, resources, and news right to your inbox!</h5>
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label fw-bold">First name</label>
+                        <input type="text" class="form-control rounded-pill" id="validationCustom01"  required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label fw-bold">Last name</label>
+                        <input type="text" class="form-control rounded-pill" id="validationCustom02"  required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label fw-bold">Email(Non-Work)</label>
+                        <input type="email" class="form-control rounded-pill" id="validationCustom03"  required>
+                        <div class="valid-feedback">
+                          Looks good!
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn btn-primary btn-sm" type="submit">sign me up!</button>
+                      </div>
+                    </form>
+                 </div>
+               <!-- Newsletter end-->
+
+               <!-- interview start -->
+                 <div class="interview">
+                    <div class="row text-center">
+                      <div class="col-md-6">
+                        <h2 class="">Did you know Lateral Hub <br>
+                          offers <b>free interview prep</b>?</h2>
+                      </div>
+                      <div class="col-md-6">
+                        <h2 class="elementor-heading-title elementor-size-default"><a href="https://wordpress-732414-3769947.cloudwaysapps.com/interview-prep/"><u>Click here to learn more</u>!<u></u></a></h2>
+                      </div>
+                    </div>
+
+                    <div class="row mt-5">
+                      <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                          <img src="image/b1.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
+                            <p class="card-text">Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub.</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                          <img src="image/b3.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body ">
+                            <h5 class="card-title">"Given the price point, joining Lateral Hub is a no-brainer for firms."</h5>
+                            <p class="card-text">– Director of Recruiting at AmLaw 50 firm</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4 mb-4">
+                        <div class="card border-0">
+                          <img src="image/b3.jpeg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">"When we save on recruiting fees, we're able to provide a higher signing bonus to the candidate."</h5>
+                            <p class="card-text">– Recruiting Manager at AmLaw 100 firm</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                 </div>
+               <!-- interview end -->
+
+               <!-- steps start -->
+                 <div class="row" id="steps">
+                  <h2 class="text-center">Start Your Lateral Search Here.</h2>
+                  <h5 class="text-center fw-bolder">Easy steps to browse and apply for jobs</h5>
+
+                  <div class="col-md-4 text-center">
+                      <img src="image/icon1.png" alt="" srcset="" style="padding:3%;">
+                      <h5 class="fw-bold m-4">Browse and Filter Jobs</h5>
+                      <p>Browse job posts from the nation's best law firms. Easily filter by location, practice group, and job level to find the job that is best for you. No log-in required!</p>
+                  </div>
+
+                  <div class="col-md-4 text-center">
+                    <img src="image/icon2.png" alt="" srcset="" style="padding:3%;">
+                    <h5 class="fw-bold m-4">Easily Apply in Seconds</h5>
+                    <p>Apply to job openings in seconds, by providing some basic information and a copy of your resume. No long application forms asking for your resume information!</p>
+                 </div>
+
+                <div class="col-md-4 text-center">
+                  <img src="image/icon3.png" alt="" srcset="" style="padding:3%;">
+                  <h5 class="fw-bold m-4">Bookmark Job Posts and Set Up Alerts</h5>
+                  <p>Create an optional account using your LinkedIn or Google login to bookmark your favorite job posts or set up alerts for different categories of jobs.</p>
+                </div>
+
+                 </div>
+               <!-- steps end -->
+
+               <!-- Library start -->
+                <div class="row" id="library">
+                    <div class="col-sm-4 rounded" id="mission">
+                      <h2 class="text-primary">Our Mission</h2>
+                      <h4 class="text-light">Making lateral moves should be easier for everyone.
+                        Firms should be able to save on recruiting fees, reserving resources that can make them more competitive in a tight market.                      
+                        Attorneys should be able to browse and filter jobs at competitive firms without hours of research to discover top-tier firms with openings. </h4>
+                        
+                        <h5 class="fw-bold mt-5 mb-5 text-light">Enter Lateral Hub.</h5>
+
+                        <h4 class="text-light">We are streamlining the lateral hiring process by giving attorneys direct and transparent access to openings at top-tier firms.
+                          Our mission is to make the lateral hiring process more efficient for top-tier firms and lateral candidates.</h4>
+                    </div>
+                    <div class="col-sm-8 p-4" id="resource">
+                        <div class="row">
+                          <h2>From the Lateral Hub Resource Library</h2>
+                            <div class="col-md-6">
+                              <div class="card">
+                                <img src="image/l1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
+                                  <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
+                                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                  <hr>
+                                  <small>Posted on January, 05th by Admin</small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="card">
+                                <img src="image/l1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
+                                  <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
+                                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                  <hr>
+                                  <small>Posted on January, 05th by Admin</small>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                          <div class="col-md-6">
+                            <div class="card">
+                              <img src="image/l1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
+                                <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
+                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <hr>
+                                <small>Posted on January, 05th by Admin</small>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="card">
+                              <img src="image/l1.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
+                                <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
+                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                                <hr>
+                                <small>Posted on January, 05th by Admin</small>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+
+                    </div>
+                </div>
+               <!-- Library end -->
+                <div class="footer">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img src="image/LH-Logo.png" alt="" srcset="">
+                      <h5><i class="fa-solid fa-jet-fighter text-primary mt-3"></i>Founded in NYC</h5>
+                    </div>
+
+                    <div class="col-md-3">
+                      <h5>Candidates</h5>              
+                      <span class="">Founded in NYC</span>
+                    </div>
+
+                    <div class="col-md-3">
+                      <h5>Law Firms</h5>  
+                    </div>
+
+                    <div class="col-md-3">
+                      <h5>About Us</h5>  
+
+                    </div>
+                  </div>
+                  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <div class="col-md-4 d-flex align-items-center">
+                      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                      </a>
+                      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+                    </div>
+                
+                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                  </footer>
+                  <a id="scroll-top" style="display: none;"><span></span></a>
+
+                </div>
+
+                
+
+               <!-- footer end -->
+
+
+
+
+            
+           
+    </div><!-- Content end -->
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+    
+    <!-- Optional JavaScript-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          margin:10,
+          nav:false,
+          dots:false,
+          autoplay:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:3
+              },
+              1000:{
+                  items:5
+              }
+          }
+     })
+
+     $(document).ready(function() {
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 100) {
+            $("#scroll-top").fadeIn();
+          } else {
+            $("#scroll-top").fadeOut();
+          }
+        });
+        $("#scroll-top").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, 500);
+          return false;
+        });
+      });
+    </script>
+  
+  </body>
+</html>
