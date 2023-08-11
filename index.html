@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=REM:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css" integrity="sha512-0nkKORjFgcyxv3HbE4rzFUlENUMNqic/EzDIeYCgsKa/nwqr2B91Vu/tNAu4Q0cBuG4Xe/D1f/freEci/7GDRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <style>
 
@@ -29,6 +30,236 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+    /* naver start */
+    @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&display=swap');
+
+
+/* header{
+
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+} */
+
+header .container-fluid{
+
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width:992px){
+
+    header .container-fluid{
+
+        padding: 0 5%;
+    }
+}
+
+header .navb-logo img{
+
+    width: 80%;
+    height: 6vh;
+}
+
+header .navb-items{
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    letter-spacing: 3px;
+}
+
+header .item{
+
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #102447;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #64d6f4;
+    border-top: 0px solid #64d6f4;
+    cursor: pointer;
+}
+
+header .item:hover{
+
+    border-bottom: 3px solid #64d6f4;
+    border-top: 3px solid #64d6f4;
+}
+
+header .item-button a{
+
+    background-color: #274d8a;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: all .5s ease;
+}
+
+header .item-button a:hover{
+
+    background-color: #64d6f4;
+}
+
+header .mobile-toggler{
+
+    font-size: 30px;
+}
+
+/* modal */
+
+.modal-dialog{
+
+    margin: 0;
+    width: 430px;
+}
+
+@media(max-width: 450px){
+
+    .modal-dialog{
+
+        width: 82%;
+    }
+}
+
+.modal-content{
+
+    border-radius: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #102447;
+}
+
+.modal-header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 88%;
+    margin: 0 auto;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #fefefe;
+}
+
+.modal-header img{
+
+    width: 140px;
+    height: 66px;
+    margin-top: 17.5px;
+}
+
+.modal-header .btn-close{
+
+    background: transparent;
+    opacity: 1;
+}
+
+.modal-header i{
+
+    color: #fefefe;
+    font-size: 30px;
+}
+
+.modal-body{
+
+    width: 88%;
+    margin: 0 auto;
+    padding: 75px 0 0 0;
+    flex: unset;
+}
+
+.modal-body .modal-line{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 7px 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #274d8a;
+    border-bottom: 1px solid #274d8a;
+}
+
+.modal-body .modal-line:hover{
+
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+}
+
+.modal-line a{
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    color: #fefefe;
+}
+
+.modal-line i{
+
+    color: currentColor;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
+    padding: 0 0 3px 3px;
+}
+
+.navb-button{
+
+    width: 100%;
+    height: 47px;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #274d8a;
+    letter-spacing: 2px;
+    transition: all .5s ease;
+}
+
+.navb-button:hover{
+
+    background-color: #274d8a;
+    color: #fefefe;
+}
+
+.mobile-modal-footer{
+
+    width: 87%;
+    margin: 0 auto;
+    padding: 20% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    color: #274d8a;
+}
+
+.mobile-modal-footer i:hover{
+
+    color: #fefefe;
+}
+
+
+
+
+    /* naver end */
     #home-footer a{
       color: white;
       text-decoration: none;
@@ -37,16 +268,84 @@
       color: #0051ff;
 
     }
+
+    /* slectpicker start */
+    #search label{
+      color: rgb(36, 35, 34);
+      font-weight: bold;
+    }
+    /* #search input{
+      border: none;
+    } */
+    #search input input[type=text]{
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #fffafa;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    #search  span{
+      border: none;
+      background: white;
+    }
+
+
+    #location label{
+      color: rgb(36, 35, 34);
+      font-weight: bold;
+    }
+    #location select{
+      border: none;
+    }
+
+    #practice label{
+      color: rgb(36, 35, 34);
+      font-weight: bold;
+    }
+    #practice select{
+      border: none;
+    }
+
+    #find_job_button button{
+      width: 100%;
+      height: 10vh;
+      margin-top: 10px;
+      color: white;
+      background: #0051ff;
+    }
+    #find_job_button button:hover{
+      border:1px solid #0051ff;
+      color: #0051ff;
+      background: white;
+    }
+
+
+   /* slectpicker end */
+
+
+
+
+
+
     .owl-carousel{
-      margin-top: 20px;
+      margin-top: 30px;
       margin-bottom: 20px;
     }
 
     .owl-carousel .item img{
-      width: 60%;
+      width: 65%;
       height: 10vh;
     }
-
+    .owl-prev{
+      float: left;
+    }
+    .owl-next{
+      float: right;
+    }
+/* end owl carousel */
     #job_aleart{
       margin-top: 20px;
       margin-bottom: 20px;
@@ -115,13 +414,41 @@
       font-size:20px;
     }
 
-    #steps .col-md-4{
+     #steps .col-md-4{
       margin-top: 40px;
-      margin-bottom: 40px;
-      border: 1px solid  #797877;    
+      margin-bottom: 40px; 
     }
-    #steps .col-md-4:hover{
+    #steps .col-md-4 .card{
+      padding: 4%;
+      text-align: center;
       border-radius: 5px;
+      border: 1px solid  #dbd8d8;   
+      transition: 0.5s; 
+    }
+    #steps .col-md-4 .card:hover{
+      border-color: #87B0E8;
+      transition: 0.5s;
+    }
+
+    #steps .col-md-4 .card img{
+      width: 40%;
+      padding: 1%;
+      margin-left: 30%;
+      margin-top: 10px;
+    }
+    #steps .col-md-4 .card h5{
+      color: #1A3454;
+      font-weight: bold;
+      margin-top: 10px;
+      font-family: 'Bricolage Grotesque', sans-serif;
+    }
+    #steps .col-md-4 .card p{
+      margin-top: 15px;
+      color: #797877;
+      font-family: 'Bricolage Grotesque', sans-serif;
+      font-family: 'Lato', sans-serif;
+    }
+  /*  #steps .col-md-4:hover{
       border: 1px solid rgb(4, 181, 204);
     }
     #steps .col-md-4 h5{
@@ -130,62 +457,122 @@
     #steps .col-md-4 p{
       font-family: 'REM', sans-serif;
       color: #797877;
-    }
+    } */
 
     #library{
-      padding: 2%;
+      margin-top: 50px;
+      padding: 1%;
     }
     #mission{
-      padding: 2%;
-      background-color: rgb(20, 20, 20);
+      padding-top: 3%;
+      padding-left: 3%;
+      padding-right: 2%;
+      background: #22211F;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+    }
+    #mission h2{
+      color: #72bafa;
+    }
+    #mission h4{
+      color: white;
+      margin-top: 30px;
+      font-size: 20px;
+      letter-spacing: 1px;
+      line-height: 30px;
+      font-family: 'Roboto', sans-serif;
     }
 
-    #resource .row .card{
-      border: none;
-      margin: 10px;
-      transition: 5ms;
-      box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
-      -webkit-box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
-      -moz-box-shadow: 1px 3px 5px 7px rgba(207,207,207,0.22);
+
+    #resource  .row .col-md-6{
+      padding: 3%;
     }
-    #resource .row .card:hover{
-      transition: 5ms;
-      box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
-      -webkit-box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
-      -moz-box-shadow: 1px 3px 5px 4px rgba(207,207,207,0.6);
+    #resource  .row .col-md-6 .resbox{
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      border-radius: 30px;
+      transition: 0.5s;
+      box-shadow: 0px 0px 6px 0px rgba(155,155,155,1);
     }
-    #resource .card .card-title{
+    #resource  .row .col-md-6 .resbox:hover{
+      transition: 0.5s;
+      box-shadow: 0px 0px 14px 0px rgba(155,155,155,1);    }
+
+    #resource  .row .col-md-6 img{
+      width: 100%;
+      height: 40vh;
+      -webkit-border-top-left-radius: 30px;
+      -webkit-border-top-right-radius: 30px;
+      -moz-border-radius-topleft: 30px;
+      -moz-border-radius-topright: 30px;
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+    }
+    #resource #tter{
       text-decoration: none;
       color: black;
-
+      transition:.5s;
     }
-
-    #resource .card .card-title:hover{
-      color: rgb(7, 93, 221);
-
+    #resource #tter:hover{
+      color: #1967D2;
+      transition:.5s;
     }
-
-    #resource .card .read-more{
+    #resource #tter h4{
+      padding-top: 2%;
+      padding-right: 5%;
+      padding-left: 8%;
+      
+    }
+    #resource  .row .col-md-6 p{
+      padding-left: 8%;
+      padding-right: 8%;
+      margin-top: 20px;
+      color: #797877;
+    }
+    #resource  .row .col-md-6 .read-more{
       text-decoration: none;
       color: black;
+      padding-left: 8%;
+      font-size: 12px;
+      transition:.5s;
     }
-    #resource .card .read-more:hover{
-      color: rgb(7, 93, 221);
+    #resource  .row .col-md-6 .read-more:hover{
+      color: #1967D2;
+      transition:.5s;
     }
-    #resource .card small{
-     margin: 0;
-     padding: 0;
-     font-size: 10px;
+    #date{
+      padding-bottom: 4%;
+      font-size: 12px;
+      font-family: 'Bricolage Grotesque', sans-serif;
     }
+
+
+   
 
     .footer{
-      padding: 10px;
-      margin-top: 10px;
+      padding: 3%;
+      margin-top: 10%;
     }
     .footer .col-md-3 img{
-      width: 50%;
+      width: 75%;
+      height: 7vh;
     }
-
+    .footer .col-md-3 p{
+      margin-top: 5%;
+      font-size: 14px;
+    }
+    .footer #footer_box h5{
+      color: black;
+      font-size: 18px;
+    }
+    .footer footer li{
+      font-size: 20px;
+    }
+    .footer footer li:hover i{
+      transition: .5s;
+      color: rgb(203, 121, 241);
+    }
     #scroll-top {
       position: fixed;
       bottom: 30px;
@@ -193,7 +580,7 @@
       width: 50px;
       height: 50px;
       font-size: 32px;
-      background: #0051ff;
+      background: #7a96d462;
       border-radius: 100%;
       cursor: pointer;
     }
@@ -206,16 +593,122 @@
       height: 0;
       width: 0;
       border: 8px solid transparent;
-      border-bottom-color: #ffffff;
+      border-bottom-color: #0056f5;
     }
     #scroll-top:hover {
       transition: 0.3s;
       box-shadow: 0 0 20px 4px #fff;
+      background: #0a53f0;
+      color: white;
+    }
+    #scroll-top:hover span{
+      border-bottom-color: #ffffff;
     }
   </style>
   <body>
 
     <div class="container-xxl"><!-- Content start -->
+       
+      <header>
+
+        <div class="container-fluid">
+
+            <div class="navb-logo">
+                <img src="image/LH-Logo.png" alt="Logo">
+            </div>
+
+            <div class="navb-items d-none d-xl-flex">
+
+              <ul class="navbar-nav ms-auto ">                  
+                <li class="nav-item dropdown">
+                  <a class="nav-link mx-2 dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Browse Jobs
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Practice Group</a></li>
+                    <li><a class="dropdown-item" href="#">Browse All</a></li>
+                    <li><a class="dropdown-item" href="#">Contact us</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-success text-light mx-2" href="#">For Candidate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-primary text-light mx-2" href="#">For Law Firms</a>
+                </li>
+              </ul>
+
+                <div class="item">
+                    <a href="/services">Services</a>
+                </div>
+
+                <div class="item">
+                    <a href="/cases">Cases</a>
+                </div>
+
+                <div class="item">
+                    <a href="/about">About</a>
+                </div>
+
+                <div class="item-button">
+                    <a href="/contact" type="button">Let's talk</a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <img src="image/LH-Logo.png" alt="Logo">
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+
+                        <div class="modal-body">
+                            
+                            <div class="modal-line">
+                                <i class="fa-solid fa-house"></i><a href="/">Home</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-bell-concierge"></i><a href="/services">Services</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-file-lines"></i> <a href="/cases">Cases</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa-solid fa-circle-info"></i><a href="/about">About</a>
+                            </div>
+
+                            <a href="/contact" class="navb-button" type="button">Let's talk</a>
+                        </div>
+
+                        <div class="mobile-modal-footer">
+                            
+                            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
 
    
             <nav class="navbar navbar-expand-lg navbar-light  ">
@@ -261,51 +754,46 @@
                 <h1 class="text-light" style="margin-top:50px;">The online job board for lateral candidates and top-tier law firms</h1>
                 <h4 class="text-light" style="margin-top:50px;">Top large, midsize, and boutique firms post their jobs on Lateral Hub so you can easily browse and apply</h4>
                 <h4 class="text-light mb-3" style="margin-top:50px;">Free to use. No account required.</h4>
-
-                    <div class="row bg-light rounded" style="padding: 20px;">
-                        <div class="col-xs-12 col-md-3 has-border">
-                          <div class="form-floating my-2">
-                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-                            <label for="floatingInputGrid">Search</label>
+                    <form action="" method="get">
+                        <div class="row bg-light rounded" style="padding: 20px;">                        
+                          <div class="col-md-3 " id="search">
+                            <label class="form-label" for="search">Email address</label>
+                            <div class="input-group mb-3">
+                              <input type="text" class="form-control" id="search" placeholder="Job title,keyword......" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <span class="input-group-text" id="basic-addon2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div> 
+                          </div>
+                          <div class="col-md-3 " id="location">
+                            <label class="form-label" for="chosen">Location</label>
+                            <div class="input-group mb-3">
+                              <select data-placeholder="Choose a location..." multiple class="form-control" name="" id="chosen">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                              </select>                         
+                            </div> 
+                          </div>
+                          <div class="col-md-3 " id="practice">
+                            <label class="form-label" for="chosen2">Practice Group</label>
+                            <div class="input-group mb-3">
+                              <select data-placeholder="Choose a country..." multiple class="form-control" name="" id="chosen2">
+                                <option value="a">A</option>
+                                <option value="b">B</option>
+                                <option value="c">C</option>
+                                <option value="d">D</option>
+                              </select>
+                            </div> 
+                          </div>
+    
+                          <div class="col-md-3" id="find_job_button">
+                            <button type="submit" class="btn btn-outline-primary">Find Job</button>
                           </div>
                         </div>
-
-                        <div class="col-xs-12 col-md-3 has-border">
-                            <div class="form-floating my-2">
-                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                  <option selected>Choose your location</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                                <label for="floatingSelectGrid">Location</label>
-                            </div>
-                         </div>
-
-                         <div class="col-xs-12 col-md-3 has-border">
-                            <div class="form-floating my-2">
-                                <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
-                                  <option selected>Choose your Practice Group</option>
-                                  <option value="1">One</option>
-                                  <option value="2">Two</option>
-                                  <option value="3">Three</option>
-                                </select>
-                                <label for="floatingSelectGrid">Practice Group</label>
-                            </div>
-                         </div>
-
-                         <div class="col-xs-12 col-md-3 has-border">
-                          <!-- <div class="form-floating">
-                            <button class="btn-submit btn btn-theme btn-inverse" type="submit"></button>
-                          </div> -->
-                          <a class="btn btn-outline-primary my-3 px-3" href="#" style="width: 100%;">Find Jobs</a>
-                       </div>
-                        
-                    </div>
+                    </form>
 
                     <div class="d-flex flex-row bd-highlight mt-3 mb-3" id="home-footer">
-                      <div class="p-2 bd-highlight"><span class="text-light fs-6 fw-bold">Popular Searches :</span></div>
-                      <div class="p-2 bd-highlight"><a href="#" class="fs-6 fw-bold"> M&A,</a><a href="#" class="fs-6 fw-bold"> Litigation,</a><a href="#" class="fs-6 fw-bold"> Corporate,</a><a href="#" class="fs-6 fw-bold"> Capital Markets,</a><a href="#" class="fs-6 fw-bold"> Real Estate</a></div>
+                      <div class="p-2 bd-highlight"><span class="text-light fs-6 fw-bold">Popular Searches :</span><a href="#" class="fs-6 fw-bold"> M&A,</a><a href="#" class="fs-6 fw-bold"> Litigation,</a><a href="#" class="fs-6 fw-bold"> Corporate,</a><a href="#" class="fs-6 fw-bold"> Capital Markets,</a><a href="#" class="fs-6 fw-bold"> Real Estate</a></div>
                     </div>
               </div>
              <!-- home section end  -->
@@ -313,8 +801,9 @@
 
              <!-- Firms start -->
              <div class="row" style="padding:30px;">
-                  <h3 class="text-center mt-3 fw-bold text-primary">Our Member Law Firms</h3>
-                  <div class="owl-carousel owl-theme">
+                  <h3 class="text-center mt-3 fw-bold" style="color: #0f4fda;">Our Member Law Firms</h3>
+       
+                  <div class="owl-carousel owl-theme ">
                     <div class="item">
                       <img src="image/owl1.jpg" alt="" srcset="">
                     </div>
@@ -430,58 +919,17 @@
                     <img src="image/b1.jpeg" class="" alt="..." >
                     <h5 class="fw-bold fs-3 p-3">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
                     <p class="fw-bold" style="padding-left: 4%; margin-top:-15px;">Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub.</p>
-                    <!-- <div class="card border-0">
-                      <img src="image/b1.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
-                        <p class="card-text">Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub.</p>
-                      </div>
-                    </div> -->
                   </div>
                   <div class="col-md-4">
                     <img src="image/b1.jpeg" class="" alt="..." >
                     <h5 class="fw-bold fs-3 p-3">"Given the price point, joining Lateral Hub is a no-brainer for firms."</h5>
                     <p class="fw-bold" style="padding-left: 4%; margin-top:-15px;" >– Director of Recruiting at AmLaw 50 firm</p>
-                    <!-- <div class="card border-0">
-                      <img src="image/b1.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
-                        <p class="card-text">Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub.</p>
-                      </div>
-                    </div> -->
                   </div>
                   <div class="col-md-4">
                     <img src="image/b1.jpeg" class="" alt="..." >
                     <h5 class="fw-bold fs-3 p-3">"When we save on recruiting fees, we're able to provide a higher signing bonus to the candidate."</h5>
                     <p class="fw-bold" style="padding-left: 4%; margin-top:-15px;">– Recruiting Manager at AmLaw 100 firm</p>
-                    <!-- <div class="card border-0">
-                      <img src="image/b1.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Top-tier firms currently pay an average of $60K - $125K per hire</h5>
-                        <p class="card-text">Firms can avoid these recruiting fees by hiring candidates directly through Lateral Hub.</p>
-                      </div>
-                    </div> -->
                   </div>
-
-                  <!-- <div class="col-4">
-                    <div class="card border-0">
-                      <img src="image/b3.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body ">
-                        <h5 class="card-title">"Given the price point, joining Lateral Hub is a no-brainer for firms."</h5>
-                        <p class="card-text">– Director of Recruiting at AmLaw 50 firm</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-4">
-                    <div class="card border-0">
-                      <img src="image/b3.jpeg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">"When we save on recruiting fees, we're able to provide a higher signing bonus to the candidate."</h5>
-                        <p class="card-text">– Recruiting Manager at AmLaw 100 firm</p>
-                      </div>
-                    </div>
-                  </div> -->
                 </div>
                <!-- interview end -->
 
@@ -489,96 +937,100 @@
                  <div class="row" id="steps">
                   <h2 class="text-center fw-bold ">Start Your Lateral Search Here.</h2>
                   <span class="text-center fw-bolder">Easy steps to browse and apply for jobs</span>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="image/icon1.png" class="card-img-top" alt="...">            
+                        <div class="card-body">
+                          <h5 class="card-title">Browse and Filter Jobs</h5>
+                          <p class="card-text">Browse job posts from the nation's best law firms. Easily filter by location, practice group, and job level to find the job that is best for you. No log-in required!</p>
+                        </div>
+                      </div>
+                    </div>
 
-                  <div class="col-md-4 text-center">
-                      <img src="image/icon1.png" alt="" srcset="" style="padding:3%;">
-                      <h5 class="fw-bold m-4">Browse and Filter Jobs</h5>
-                      <p>Browse job posts from the nation's best law firms. Easily filter by location, practice group, and job level to find the job that is best for you. No log-in required!</p>
-                  </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="image/icon2.png" class="card-img-top" alt="...">            
+                        <div class="card-body">
+                          <h5 class="card-title">Easily Apply in Seconds</h5>
+                          <p class="card-text">Apply to job openings in seconds, by providing some basic information and a copy of your resume. No long application forms asking for your resume information!</p>
+                        </div>
+                      </div>
+                    </div>
 
-                  <div class="col-md-4 text-center">
-                    <img src="image/icon2.png" alt="" srcset="" style="padding:3%;">
-                    <h5 class="fw-bold m-4">Easily Apply in Seconds</h5>
-                    <p>Apply to job openings in seconds, by providing some basic information and a copy of your resume. No long application forms asking for your resume information!</p>
-                 </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="image/icon3.png" class="card-img-top" alt="...">            
+                        <div class="card-body">
+                          <h5 class="card-title">Bookmark Job Posts and Set Up Alerts</h5>
+                          <p class="card-text">Create an optional account using your LinkedIn or Google login to bookmark your favorite job posts or set up alerts for different categories of jobs.</p>
+                        </div>
+                      </div>
+                    </div>
 
-                <div class="col-md-4 text-center">
-                  <img src="image/icon3.png" alt="" srcset="" style="padding:3%;">
-                  <h5 class="fw-bold m-4">Bookmark Job Posts and Set Up Alerts</h5>
-                  <p>Create an optional account using your LinkedIn or Google login to bookmark your favorite job posts or set up alerts for different categories of jobs.</p>
-                </div>
 
                  </div>
                <!-- steps end -->
 
                <!-- Library start -->
                 <div class="row" id="library">
-                    <div class="col-sm-4 rounded" id="mission">
-                      <h2 class="text-primary">Our Mission</h2>
-                      <h4 class="text-light">Making lateral moves should be easier for everyone.
-                        Firms should be able to save on recruiting fees, reserving resources that can make them more competitive in a tight market.                      
-                        Attorneys should be able to browse and filter jobs at competitive firms without hours of research to discover top-tier firms with openings. </h4>
-                        
-                        <h5 class="fw-bold mt-5 mb-5 text-light">Enter Lateral Hub.</h5>
-
-                        <h4 class="text-light">We are streamlining the lateral hiring process by giving attorneys direct and transparent access to openings at top-tier firms.
-                          Our mission is to make the lateral hiring process more efficient for top-tier firms and lateral candidates.</h4>
+                    <div class="col-sm-4" id="mission">
+                      <h2 class="">Our Mission</h2>
+                      <h4>Making lateral moves should be easier for everyone.</h4>
+                      <h4>Firms should be able to save on recruiting fees, reserving resources that can make them more competitive in a tight market.</h4>
+                      <h4>Attorneys should be able to browse and filter jobs at competitive firms without hours of research to discover top-tier firms with openings. </h4> 
+                      <h5 class="fw-bold mt-5 mb-5 text-light">Enter Lateral Hub.</h5>
+                      <h4 >We are streamlining the lateral hiring process by giving attorneys direct and transparent access to openings at top-tier firms.</h4>
+                      <h4>Our mission is to make the lateral hiring process more efficient for top-tier firms and lateral candidates.</h4>
                     </div>
-                    <div class="col-sm-8 p-4" id="resource">
-                        <div class="row">
-                          <h2>From the Lateral Hub Resource Library</h2>
-                            <div class="col-md-6">
-                              <div class="card">
-                                <img src="image/l1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
-                                  <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
-                                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                  <hr>
-                                  <small>Posted on January, 05th by Admin</small>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-6">
-                              <div class="card">
-                                <img src="image/l1.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
-                                  <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
-                                  <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                  <hr>
-                                  <small>Posted on January, 05th by Admin</small>
-                                </div>
-                              </div>
-                            </div>
+                    <div class="col-sm-8" id="resource">
+                      <div class="row mt-2">
+                        <h2 style="display: inline-block; margin-left: 10px;">From the Lateral Hub Resource Library</h2>
+                         <div class="col-md-6">
+                           <div class="resbox">
+                            <img src="image/la1.jpg" alt="">
+                            <a href="" class="" id="tter"><h4>When Your Cover Letter Can Hurt You</h4></a>
+                            <p>Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
+                            <a href="" class="read-more"><strong>READ MORE >></strong></a>
+                            <hr>
+                            <p id="date">June 23, 2023</p>
+                          </div>
+                         </div>
+                         <div class="col-md-6">
+                          <div class="resbox">
+                            <img src="image/la2.jpg" alt="">
+                            <a href="" class="" id="tter"><h4>When Should You Include a Cover Letter?</h4></a>
+                            <p>Cover letters take time – so when should you include one?</p>
+                            <a href="" class="read-more"><strong>READ MORE >></strong></a>
+                            <hr>
+                            <p id="date">June 15, 2023</p>
+                          </div>
                         </div>
-
-                        <div class="row mt-3">
-                          <div class="col-md-6">
-                            <div class="card">
-                              <img src="image/l1.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
-                                <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
-                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <hr>
-                                <small>Posted on January, 05th by Admin</small>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-md-6">
-                            <div class="card">
-                              <img src="image/l1.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                <a href="#" class="card-title fs-3">When Your Cover Letter Can Hurt You</a>
-                                <p class="card-text mt-3">Avoid these pitfalls to make sure your cover letter helps, not hurts</p>
-                                <a href="#" class="read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
-                                <hr>
-                                <small>Posted on January, 05th by Admin</small>
-                              </div>
-                            </div>
-                          </div>
                       </div>
+
+                      <div class="row">
+                         <div class="col-md-6">
+                           <div class="resbox">
+                            <img src="image/la3.webp" alt="">
+                            <a href="" class="" id="tter"><h4>Recording – Virtual Q&A for Associates Impacted by Layoffs</h4></a>
+                            <p>Live Virtual Q&A for Associates Impacted by Layoffs! In case you missed it, you can watch the full recording of our live virtual session hosted on Tuesday, May 23.</p>
+                            <a href="" class="read-more"><strong>READ MORE >></strong></a>
+                            <hr>
+                            <p id="date">June 9, 2023</p>
+                          </div>
+                         </div>
+                         <div class="col-md-6">
+                          <div class="resbox">
+                            <img src="image/la4.jpg" alt="">
+                            <a href="" class="" id="tter"><h4>Three Steps Lawyers Can Take Following Involuntary Terminations</h4></a>
+                            <p>How to use an involuntary termination as an opportunity to move forward and advance your career</p>
+                            <a href="" class="read-more"><strong>READ MORE >></strong></a>
+                            <hr>
+                            <p id="date">March 3, 2023</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                        
 
                     </div>
                 </div>
@@ -586,36 +1038,33 @@
                 <div class="footer">
                   <div class="row">
                     <div class="col-md-3">
-                      <img src="image/LH-Logo.png" alt="" srcset="">
-                      <h5><i class="fa-solid fa-jet-fighter text-primary mt-3"></i>Founded in NYC</h5>
+                      <a href=""><img src="image/footer-logo.png" alt="" srcset=""></a>
+                      <p class="p-2"><span style="font-family: var(--superio-main-font), Helvetica, Arial, sans-serif; ">🚀&nbsp;</span><span style="color: #797877;">Founded in NYC</span>&nbsp;<span style="font-family: var(--superio-main-font), Helvetica, Arial, sans-serif;">🗽</span></p>
+                      <p class="fs-6"  style="color: #797877;">212-899-5201</p>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="footer_box">
                       <h5>Candidates</h5>              
                       <span class="">Founded in NYC</span>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="footer_box">
                       <h5>Law Firms</h5>  
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="footer_box">
                       <h5>About Us</h5>  
 
                     </div>
                   </div>
-                  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                      </a>
-                      <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
-                    </div>
+                  <hr style="width: 100%;">
+                  <footer class="d-flex flex-wrap justify-content-end align-items-center py-3 my-4 ">
+
                 
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
-                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
-                      <li class="ms-3"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
+                      <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-square-facebook"></i></a></li>
+                      <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-square-twitter"></i></a></li>
+                      <li class="ms-4"><a class="text-muted" href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                     </ul>
                   </footer>
                   <a id="scroll-top" style="display: none;"><span></span></a>
@@ -647,13 +1096,13 @@
     -->
     
     <!-- Optional JavaScript-->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js" integrity="sha512-eSeh0V+8U3qoxFnK3KgBsM69hrMOGMBy3CNxq/T4BArsSQJfKVsKb5joMqIPrNMjRQSTl4xG8oJRpgU2o9I7HQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       $('.owl-carousel').owlCarousel({
           loop:true,
           margin:10,
-          nav:false,
+          nav:true,
           dots:false,
           autoplay:true,
           responsive:{
@@ -661,10 +1110,10 @@
                   items:1
               },
               600:{
-                  items:3
+                  items:4
               },
               1000:{
-                  items:5
+                  items:6
               }
           }
      })
@@ -682,7 +1131,21 @@
           return false;
         });
       });
+
+
+
+      // chosen
+      $(document).ready(function() {
+          $("#chosen").chosen({width:"100%"});
+          $("#chosen2").chosen({width:"100%"});
+
+      });
     </script>
+ 
+ <script>
+  
+ </script>
+
   
   </body>
 </html>
